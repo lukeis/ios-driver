@@ -70,6 +70,18 @@
             write your
             test.</p>
 
+        <h3>Setup for Mobile Safari</h3>
+
+        <p>Currently is only supported using Simulator. Some directory and file permissions need to be updated:</p>
+        <pre>
+    chmod +rw /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/
+    chmod +rw /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk/Applications/MobileSafari.app/Info.plist
+</pre>
+        <p>Next, start the ios-server:</p>
+        <pre>
+    java -jar ios-server-X.X.X.jar -port 4444
+</pre>
+
         <h3>The basics</h3>
 <pre class="prettyprint">
 public static void main(String[] args) throws Exception {
